@@ -1,0 +1,85 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 150px; /* Adjust this value to move the content down */
+}
+
+.congrats-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.congrats-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.congrats-card h1 {
+    color: #ff6347;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+.vibrate {
+    color: #ff6347;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: vibrate 0.5s linear infinite;
+}
+
+.sub-count {
+    color: #333333;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.celebration-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.heartfelt-message {
+    color: #555555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background: #fff0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .congrats-card {
+        padding: 20px;
+    }
+
+    .congrats-card h1 {
+        font-size: 2.5em;
+    }
+
+    .heartfelt-message {
+        font-size: 1em;
+    }
+}
