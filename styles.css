@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 150px; /* Adjust this value to move the content down */
+    margin-top: 150px; 
 }
 
 .congrats-card {
